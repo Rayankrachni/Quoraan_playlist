@@ -1,1 +1,1 @@
-# Quoraan_playlist
+# EEG Detection using deep Learning Models application to Epilepsy seizures
