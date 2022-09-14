@@ -15,6 +15,9 @@ point in time.
 
 ## Experiments and proposed approach
 ##VGG 16
+- George Washington
+- John Adams
+- Thomas Jefferson
 	1.  2 x convolution layer of 64 channel of 3x3 kernal and same padding + relu activation. 
 	2.  1 x maxpool layer of 2x2 pool size and stride 2x2.
 	3.  2 x convolution layer of 128 channel of 3x3 kernal and same padding + relu activation.
