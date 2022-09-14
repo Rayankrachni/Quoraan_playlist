@@ -32,7 +32,9 @@ point in time.
 
 
 ##VGG 19
-
+1. James Madison
+2. James Monroe
+3. John Quincy Adams
 In order to classify epileptic seizure and achieved our aim, we started by import the data and prepare it, then fed it into our model. The  following steps explain how we organized the layer which make up this model.
 
 
