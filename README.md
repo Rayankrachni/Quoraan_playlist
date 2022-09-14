@@ -15,16 +15,16 @@ point in time.
 
 ## Experiments and proposed approach
 ##VGG 16
-	1-  2 x convolution layer of 64 channel of 3x3 kernal and same padding + relu activation. 
-	2-  1 x maxpool layer of 2x2 pool size and stride 2x2.
-	3-  2 x convolution layer of 128 channel of 3x3 kernal and same padding + relu activation.
-	4-  1 x maxpool layer of 2x2 pool size and stride 2x2. 
-	5-  3 x convolution layer of 256 channel of 3x3 kernal and same padding + relu activation.
-	6-  1 x maxpool layer of 2x2 pool size and stride 2x2.
-	7-  3 x convolution layer of 512 channel of 3x3 kernal and same padding + relu activation.
-  8-  1 x maxpool layer of 2x2 pool size and stride 2x2.
-	9-  3 x convolution layer of 512 channel of 3x3 kernal and same padding + relu activation.
-	10- 1 x maxpool layer of 2x2 pool size and stride 2x2.
+	1.  2 x convolution layer of 64 channel of 3x3 kernal and same padding + relu activation. 
+	2.  1 x maxpool layer of 2x2 pool size and stride 2x2.
+	3.  2 x convolution layer of 128 channel of 3x3 kernal and same padding + relu activation.
+	4.  1 x maxpool layer of 2x2 pool size and stride 2x2. 
+	5.  3 x convolution layer of 256 channel of 3x3 kernal and same padding + relu activation.
+	6.  1 x maxpool layer of 2x2 pool size and stride 2x2.
+	7.  3 x convolution layer of 512 channel of 3x3 kernal and same padding + relu activation.
+        8.  1 x maxpool layer of 2x2 pool size and stride 2x2.
+	9.  3 x convolution layer of 512 channel of 3x3 kernal and same padding + relu activation.
+	10. 1 x maxpool layer of 2x2 pool size and stride 2x2.
   
   <img width="625" alt="accu_loss_v16_c2" src="https://user-images.githubusercontent.com/87647184/182105590-a5f6cc5b-0f7a-4087-a0f4-3366b451f7a7.PNG">
 
