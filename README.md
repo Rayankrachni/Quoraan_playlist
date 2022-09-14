@@ -32,30 +32,27 @@ point in time.
 
 
 ##VGG 19
-1. James Madison
-2. James Monroe
-3. John Quincy Adams
+
 In order to classify epileptic seizure and achieved our aim, we started by import the data and prepare it, then fed it into our model. The  following steps explain how we organized the layer which make up this model.
 
-
-1- The first two layers are convolutional layers of 64 channel and 3*3 kernel size with same padding.
-2- After this, pooling layer was used with max-pool of 2*2 size and stride 2 which reduces the dimension of EEG signal.
-3- This is followed by 2 more convolution layers of 128 channel. 
-4- Then a pooling layer is used with max-pool of 2*2 size and stride 2.
-5- Four more convolution layers are added with depth of  256  and the same padding.
-6- Then a pooling layer is used with max-pool of 2*2 size and stride 2.
-7- Four more convolution layers are added with 512 channel and the same padding.
-8- This is followed by a pooling layer with max-pool of 2*2 size and stride 2.
-9- Again,Four more convolution layers are added with 512 channels and the same padding.
-10- The previous layer is followed by a pooling layer with max-pool of 2*2 size and stride 2.
+1. The first two layers are convolutional layers of 64 channel and 3*3 kernel size with same padding.
+2. After this, pooling layer was used with max-pool of 2*2 size and stride 2 which reduces the dimension of EEG signal.
+3. This is followed by 2 more convolution layers of 128 channel.
+4. Then a pooling layer is used with max-pool of 2*2 size and stride 2.
+5. Four more convolution layers are added with depth of  256  and the same padding.
+6. Then a pooling layer is used with max-pool of 2*2 size and stride 2.
+7. Four more convolution layers are added with 512 channel and the same padding.
+8. This is followed by a pooling layer with max-pool of 2*2 size and stride 2.
+9. Again,Four more convolution layers are added with 512 channels and the same padding.
+10. The previous layer is followed by a pooling layer with max-pool of 2*2 size and stride 2.
 
 Each Convolution layer has Relu as an activation function for the purpose of stop forwarding
 negative values through the network.
 After the final pooling layer the output obtained is flattened into Fully Connected (FC) layer with
 4096 channels and softmax output of 2 classes so we added:
-• 1 x Dense layer of 4096 units + RELU activation.
-• 1 x Dense layer of 4096 units + RELU activation.
-• 1 x Dense Softmax layer of 2 units.
+- 1 x Dense layer of 4096 units + RELU activation.
+- 1 x Dense layer of 4096 units + RELU activation.
+- 1 x Dense Softmax layer of 2 units.
 <img width="580" alt="vgg192classes_accuracy_loss" src="https://user-images.githubusercontent.com/87647184/182106130-4aff0391-1215-43dd-85e0-fe468acfbeab.png">
 
 
